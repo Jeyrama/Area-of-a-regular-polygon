@@ -34,3 +34,5 @@ function areaOfRegularPolygon(s) {
 
   return `${roundedArea} sq.${unit}`;
 }
+
+// or
