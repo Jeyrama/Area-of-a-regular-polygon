@@ -36,3 +36,10 @@ function areaOfRegularPolygon(s) {
 }
 
 // or
+
+function areaOfRegularPolygon(s) {
+  let match = s.match(/^(\d+) sides of ([0-9]+\.?[0-9]*) (\w+) each$/);
+  if (match === null || match[1] < 3) return 'Invalid input';
+  return `${getArea(match[2], match[1]).toFixed(2)} sq.${match[3]}`;
+}
+function getArea(s, n) { return s * s * n / 4 / Math.tan(Math.PI / n); }
