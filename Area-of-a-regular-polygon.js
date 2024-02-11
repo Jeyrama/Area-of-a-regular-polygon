@@ -8,3 +8,5 @@ such as "25.00 sq.cm". The anwer should be rounded to two digits after the decim
 If the input string has a wrong format, the function returns "Invalid input".
 */
 
+
+// Solution
